@@ -6,7 +6,7 @@
   --dark-pink: #f74780;
   --medium-pink: #ffa7c3;
   --white: #fff;
-  --bgc:#F1F2FC;
+  --bgc: #f1f2fc;
 
   /* Gradients */
   --gradient-orange-pink: linear-gradient(#f02aa6, #ff6f48);
@@ -154,6 +154,10 @@ body {
   overflow: hidden;
   background-image: url(../assets/image-hero-mobile.webp);
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
 }
 
 .courses-section {
@@ -237,4 +241,38 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-block: 3.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-inline: 3.9rem;
+  }
+  .section-navigation {
+    background: transparent;
+  }
+  .header > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .h1 {
+    margin: 0;
+    font-weight: var(--fw-800);
+    font-size: var(--heading-l);
+    padding-block: 3.4rem;
+  }
+  .box-2 {
+    background-image: url(../assets/image-hero-desktop.webp);
+    background-size: 540px;
+    background-position: 0px -150px;
+  }
+  .courses-section > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem 1rem;
+  }
+  .course1 {
+    height: 100%;
+    align-items: start;
+    padding-top: 6rem;
+  }
 }
