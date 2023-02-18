@@ -6,7 +6,7 @@
   --dark-pink: #f74780;
   --medium-pink: #ffa7c3;
   --white: #fff;
-  --bgc: #f1f2fc;
+  --bgc: linear-gradient(#fff, #f1f2fc);
 
   /* Gradients */
   --gradient-orange-pink: linear-gradient(#f02aa6, #ff6f48);
@@ -111,7 +111,6 @@ body {
   font-weight: var(--fw-500);
   background-color: var(--white);
   font-size: 1.6rem;
-  height: 1500px;
 }
 
 .navigation {
@@ -161,7 +160,7 @@ body {
 }
 
 .courses-section {
-  background-color: var(--bgc);
+  background-image: var(--bgc);
   padding-bottom: 7.9rem;
 }
 
@@ -241,6 +240,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-block: 3.6rem;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -274,5 +274,19 @@ body {
     height: 100%;
     align-items: start;
     padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .container {
+    padding-inline: 13.1rem;
+  }
+  .courses-section > .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem 1rem;
+  }
+  .course {
+    height: 100%;
   }
 }
