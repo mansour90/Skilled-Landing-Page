@@ -156,8 +156,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
-}
 
 .courses-section {
   background-image: var(--bgc);
@@ -244,6 +242,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .course {
+    height: 100%;
+  }
   .container {
     padding-inline: 3.9rem;
   }
